@@ -1,0 +1,80 @@
+html {
+  font-size: 12px;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-size: 12px;
+}
+
+.bg-purple {
+    background-color: #800080; /* Purple color */
+    width: 100%;
+    display: block;
+}
+
+.bg-grey {
+	background-color: rgb(142, 142, 142);
+}
+
+.bg-lightgrey {
+	background-color: rgb(227, 227, 227);
+}
+
+h1{
+    font-size: 14px;
+}
+
+h2{
+    font-size: 14px;
+}
+
+h3{
+    font-size: 14px;
+}
+
+h4{
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 14px;
+	color: white;
+	background-color: purple;
+	text-align: center;
+    }
+
+h6 {
+    font-size: 10px;
+}
+
+.white-text {
+    color: white; 
+}
+
+.container {
+	Width: 600px;
+}
+
+
+.container-sm {
+	width: 800px;
+}
+
+.container-md {
+	width: 1000px;
+}
+
+.container-lg {
+	width: 1200px;
+}
+
+.container-xl {
+	width: 1400px;
+}
+
+.container-xxl {
+	width: 1600px;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Profusion Insurance",
+  "short_name": "Profusion",
+  "start_url": "/dashboard.php",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6A0DAD",
+  "icons": [
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "description": "Insurance underwriting application for Profusion Insurance",
+  "scope": "/"
+}

@@ -1,0 +1,10 @@
+# PHP-specific ignores
+vendor/
+.env
+*.log
+*.cache
+/tmp/
+
+# OS-specific
+.DS_Store
+Thumbs.db
