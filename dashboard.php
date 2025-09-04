@@ -422,13 +422,13 @@ $is_superadmin = $role === 'Profusion SuperAdmin';
                             for ($i = $start_page; $i <= $end_page; $i++) {
                                 $page_url = "?page=$i&search=" . urlencode($search) . "&search_type=" . urlencode($search_type);
                                 $active_class = ($i == $page) ? 'active' : '';
-                                echo '<li class="page-item ' . $active_class . '"><a class="page-link" href="' . $page_url . '">' . $i . '</a></li>';
+                                echo '<li class="page-item ' . htmlentities($active_class, ENT_QUOTES) . '"><a class="page-link" href="' . htmlentities($page_url, ENT_QUOTES) . '">' . $i . '</a></li>';
                             }
                    
                             // Next Page (>)
                             if ($page < $total_pages) {
                                 $next_url = "?page=" . ($page + 1) . "&search=" . urlencode($search) . "&search_type=" . urlencode($search_type);
-                                echo '<li class="page-item"><a class="page-link" href="' . $next_url . '">&gt;</a></li>'; // &gt; is >
+                                echo '<li class="page-item"><a class="page-link" href="' . htmlentities($next_url, ENT_QUOTES) . '">&gt;</a></li>'; // &gt; is >
                             } else {
                                 echo '<li class="page-item disabled"><a class="page-link" href="#">&gt;</a></li>';
                             }
@@ -437,7 +437,7 @@ $is_superadmin = $role === 'Profusion SuperAdmin';
                             if ($end_page < $total_pages) {
                                 $next_block_page = $end_page + 1;
                                 $next_block_url = "?page=$next_block_page&search=" . urlencode($search) . "&search_type=" . urlencode($search_type);
-                                echo '<li class="page-item"><a class="page-link" href="' . $next_block_url . '">&raquo;</a></li>'; // &raquo; is >>
+                                echo '<li class="page-item"><a class="page-link" href="' . htmlentities($next_block_url, ENT_QUOTES) . '">&raquo;</a></li>'; // &raquo; is >>
                             }
                             ?>
                         </ul>
